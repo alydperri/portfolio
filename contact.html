@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Alyshia Perri — designer and developer specializing in learning experiences, games, and AI.">
+    <meta name="author" content="Alyshia Perri">
+    <title>Contact — Alyshia Perri</title>
+
+    <link rel="canonical" href="https://alydperri.com/contact.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/all.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+
+    <!-- Custom styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-brand" href="index.html" aria-label="Alyshia Perri – home">
+      <div class="nav-monogram">AP</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Alyshia Perri</span>
+        <span class="nav-brand-sub">Design Portfolio</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="lxd.html">LXD</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="animation.html">Animation</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-accent-dots" aria-hidden="true">
+      <div class="nav-dot-sq" style="background:var(--blue)"></div>
+      <div class="nav-dot-rect" style="background:var(--gold)"></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="lxd.html">LXD</a>
+    <a href="games.html">Games</a>
+    <a href="animation.html">Animation</a>
+    <a href="graphics.html">Graphics</a>
+    <a href="writing.html">Writing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="section-page-intro text-center">
+        <h1>Contact</h1>
+        <p>Want to work together or just say hello? Find me on LinkedIn or Instagram — I'd love to connect.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+          <a class="btn-primary-ap" href="https://www.linkedin.com/in/alydferri/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin" aria-hidden="true"></i> Message on LinkedIn
+          </a>
+          <a class="btn-outline-ap" href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener">
+            <i class="fab fa-instagram" aria-hidden="true"></i> Catch me on Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="connect-strip">
+    <h3>Let's Connect</h3>
+    <div class="connect-icons">
+      <a class="connect-icon" href="https://www.linkedin.com/in/alydferri/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="connect-icon" href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="color-bar" aria-hidden="true">
+    <span style="background:var(--blue);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+    <span style="background:var(--cream-dk);flex:3"></span>
+    <span style="background:var(--rust);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+  </div>
+
+  <footer role="contentinfo">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Alyshia Perri. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+
+  </body>
+</html>

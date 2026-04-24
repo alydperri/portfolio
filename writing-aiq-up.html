@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How I designed AIQ Up — a personality quiz that's really a strategic AI sensing engine in disguise. A behind-the-build story.">
+    <meta name="author" content="Alyshia Perri">
+    <title>AIQ Up: How I Designed a Bot to Map AI Fluency from the Ground Up — Alyshia Perri</title>
+
+    <link rel="canonical" href="https://alydperri.com/writing-aiq-up.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/all.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+
+    <!-- Custom styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-brand" href="index.html" aria-label="Alyshia Perri – home">
+      <div class="nav-monogram">AP</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Alyshia Perri</span>
+        <span class="nav-brand-sub">Design Portfolio</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="lxd.html">LXD</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="animation.html">Animation</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+      <li><a href="writing.html" class="active" aria-current="page">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-accent-dots" aria-hidden="true">
+      <div class="nav-dot-sq" style="background:var(--blue)"></div>
+      <div class="nav-dot-rect" style="background:var(--gold)"></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="lxd.html">LXD</a>
+    <a href="games.html">Games</a>
+    <a href="animation.html">Animation</a>
+    <a href="graphics.html">Graphics</a>
+    <a href="writing.html">Writing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+          <div class="pt-4 pb-3 border-bottom mb-4">
+            <p class="mb-2">
+              <a href="writing.html" class="back-link">
+                <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Writing
+              </a>
+            </p>
+            <h1 class="lh-sm mb-2">AIQ Up: How I Designed a Bot to Map AI Fluency from the Ground Up</h1>
+            <p class="text-muted small mb-2">
+              November 2025 &nbsp;&middot;&nbsp; 8 min read
+              &nbsp;&middot;&nbsp; <span class="tag tag-gold">Conversational AI</span>
+              <span class="tag tag-rust">LXD</span>
+            </p>
+            <p class="small">
+              <a href="https://www.linkedin.com/pulse/aiq-up-how-i-designed-bot-map-ai-fluency-from-ground-alyshia-perri-ine0c" class="text-muted" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin" aria-hidden="true"></i> Originally published on LinkedIn
+              </a>
+            </p>
+          </div>
+
+          <figure class="mb-4">
+            <img src="assets/writing/aiqup.png" class="img-fluid rounded" alt="AIQ Up: How I Designed a Bot to Map AI Fluency from the Ground Up — article cover image">
+          </figure>
+
+          <article class="article-body pb-5">
+
+            <p><em>Turning a leadership question into a sensing system for learning in the age of AI.</em></p>
+
+            <h2 id="behind-the-build">Behind the Build</h2>
+
+            <p>The L&amp;D community is buzzing with conversations about how AI is changing our work. But so much of that conversation is high-level "what if." What I've been craving (and what I'm seeing others ask for) are the practical, "behind the build" stories of how we're moving from theory to practice.</p>
+
+            <p>This is my story of building one such tool: AIQ Up, a "personality quiz" that's really a strategic sensing engine in disguise.</p>
+
+            <p>It's a story about pivoting from a traditional L&amp;D curriculum model to a "bottom-up, discovery model". Here's a look at how it was designed, prototyped, and launched.</p>
+
+            <h2 id="rubric-problem">Part 1: The Rubric Problem</h2>
+
+            <p>The project didn't start with a clear solution. It started with a complex (and critical) strategic question from leadership: "What is our AI Fluency 2.0 and 3.0?".</p>
+
+            <p>My first step was to explore traditional L&amp;D paths to answer this. My manager Corey had suggested the concept of a 'personal AI coach' (an idea that really resonated). I also explored what it would take to build a formal "AI fluency assessment".</p>
+
+            <p>I prototyped these concepts and quickly hit a fundamental, strategic wall with all of them: How can you coach or assess a skill you can't define?</p>
+
+            <p>In a space this new, any "rubric" we created would be a top-down, theoretical guess. A coach or assessment built on that guess would be flawed from the start. This is why the traditional, one-size-fits-all curriculum approach needed to evolve. We couldn't "push" a generic "201" course when our people were already in wildly different places.</p>
+
+            <h3>The Strategic Pivot</h3>
+
+            <p>That realization was the critical turning point. It flipped the entire problem. We had to shift from pushing content to pulling insights. Instead of guessing what "good" looked like, we needed to build a "sensing engine" to see what people were actually doing. We had to learn our way to a rubric.</p>
+
+            <figure class="my-4">
+              <img src="assets/writing/rubric.png" class="img-fluid rounded" alt="How behavioral data becomes the foundation for a validated fluency framework">
+              <figcaption class="text-muted small mt-2 fst-italic">How behavioral data becomes the foundation for a validated fluency framework</figcaption>
+            </figure>
+
+            <p>Our new philosophy was to map the "diversity of strengths" in our AI ecosystem. An AI-native company doesn't just need prompt engineers; it critically needs Knowledge Tuners (who curate knowledge bases), Guardrail Guardians (who manage risk), and Workflow Weavers (who automate processes). At the same time, it also needs to identify new innovators emerging from unexpected places.</p>
+
+            <p>This "diversity of strengths" philosophy is not just a framework; it's a more inclusive and strategic approach to building AI fluency. It intentionally counters the common, high-pressure narrative that "everyone must be a bot-builder or prompt engineer". That narrative can be alienating. This model, by contrast, validates the critical, high-value AI contributions from everyone—the curators, the testers, the process-improvers—and gives us a way to see and scale all of that goodness.</p>
+
+            <h3>Designing for Product Delight</h3>
+
+            <p>For this to work, it couldn't feel like a test. I designed it around what Nesrine Changuel calls "Product Delight" principles—"The delight is actually this ability to create products that serve for both emotional need and functional need." Her insights from Lenny's Podcast heavily influenced my approach as I was crafting AIQ Up, leading to a framework that balances two key drivers:</p>
+
+            <ol>
+              <li><strong>Functional Motivators (The "Useful"):</strong> The experience had to provide immediate, personal value. The user reflects on one real AI use case and, in return, gets personalized coaching and tangible next steps.</li>
+              <li><strong>Emotional Motivators (The "Joyful"):</strong> The experience had to be engaging. This is where the "personality" part comes in. It had to be playful like a personality quiz (think Hogwarts Houses or Buzzfeed results). This lowers the stakes and makes people want to participate.</li>
+            </ol>
+
+            <p>This "useful and joyful" design led directly to the core concept: a bot that sorts you into one of 11 AI Personas. These aren't just fun names; they are behavioral archetypes. For example:</p>
+
+            <ul>
+              <li>✍️ <strong>Draft Whisperer — The Wordsmith:</strong> You use AI to shape messy ideas into crisp words, focusing on speed and clarity.</li>
+              <li>🧪 <strong>Prototype Wrangler — The Maker:</strong> You learn by building, testing, and iterating. You're the one wrangling messy prompts until you have something people can use.</li>
+              <li>🔍 <strong>Data Sleuth — The Investigator:</strong> You use AI as a partner in analysis, finding the signal in the noise.</li>
+            </ul>
+
+            <h2 id="build-iteration">Part 2: The Rigorous Build &amp; Iteration Loop</h2>
+
+            <p>I didn't have a dedicated dev team, so I used ChatGPT as my rapid prototyping environment to architect and test the entire system myself. This was not a quick process; it was a relentless loop of building, testing, and iterating to ensure the logic was sound.</p>
+
+            <h3>1. Architecting the Brain</h3>
+
+            <p>The build involved three complex layers:</p>
+
+            <ul>
+              <li><strong>The Conversational Flow:</strong> Designing the 8-question sequence that guides the user through their story (Role &gt; Tools &gt; Goal &gt; Approach &gt; Outcome, etc.).</li>
+              <li><strong>The Persona Matching Logic:</strong> This was the core technical design. I built a system of "signals," "bundles," and "anti-signals" so the bot could analyze the behavior in a user's story, not just hunt for keywords.</li>
+              <li><strong>The Coaching Framework:</strong> Designing the 3-part coaching output ("Doing well," "Push further," "Next step" + a 7-day micro-challenge).</li>
+            </ul>
+
+            <figure class="my-4">
+              <img src="assets/writing/persona-logic.png" class="img-fluid rounded" alt="A peek at the 'brain' of the bot: the persona matching logic I architected to analyze user stories">
+              <figcaption class="text-muted small mt-2 fst-italic">A peek at the 'brain' of the bot: the persona matching logic I architected to analyze user stories.</figcaption>
+            </figure>
+
+            <h3>2. A Relentless Testing Cycle (Pre-Launch)</h3>
+
+            <p>The rigor was in the testing. We couldn't launch this until it was proven to be robust, accurate, and resonant.</p>
+
+            <ul>
+              <li><strong>Step 1: Personal Prototyping:</strong> I personally built 8 major prototypes and tested the bot hundreds of times with different examples to refine the matching logic and coaching quality.</li>
+              <li><strong>Step 2: Core Team Testing:</strong> I opened it up to my immediate L&amp;D team for initial feedback.</li>
+              <li><strong>Step 3: Broader User Testing:</strong> I then ran a formal testing phase with a diverse set of 30+ HubSpotters from different orgs and roles (e.g., Marketing, CS, UX). This wasn't just a bug hunt; I was testing resonance.</li>
+            </ul>
+
+            <p>This pre-launch testing was crucial. We learned, for example, that the "Levels" (Starter, Explorer, Builder) were confusing and needed better explanation. We also heard that some of the "micro-challenges" felt too heavy, so I iterated on the prompt logic to make them more "micro". But just as importantly, the testing overwhelmingly validated our Product Delight hypothesis. We received broad positive feedback that the experience was 'fun' and 'engaging,' but also 'useful' and 'worth sharing'. This rigorous, multi-stage process was vital to building trust in the tool before it ever went live.</p>
+
+            <h2 id="launch">Part 3: From Prototype to Platform (The Launch)</h2>
+
+            <h3>From Prototype to Strategic Partnership</h3>
+
+            <p>A prototype in ChatGPT is a powerful demo, but it's a closed loop. The real strategic win came from deploying it, which required a deep partnership with our People Analytics team.</p>
+
+            <p>We launched AIQ Up in GrowGetterAI, their internal AI platform. This move was critical for two reasons:</p>
+
+            <ol>
+              <li><strong>Trust &amp; Privacy:</strong> It ensured all interactions are confidential and data is anonymized by default, which was non-negotiable.</li>
+              <li><strong>The Insight Engine:</strong> This is the key. This partnership is what transforms AIQ Up from a simple tool into a sensing system. By living on their platform, we now have the ability to aggregate all the anonymized data, learn from the patterns, and build the behavioral maps that were the goal from day one. This would be impossible in a public tool.</li>
+            </ol>
+
+            <h3>Partnering for the Pull</h3>
+
+            <p>A good product can still fail with a bad launch. We needed to continue the "pull" philosophy. I collaborated closely with our Internal Comms team on a launch strategy that was about "momentum, not mandates".</p>
+
+            <p>We framed the launch as the first part of "Promptember," a fun, 2-week AI challenge. The comms plan was designed to spark curiosity and organic participation, not feel like another top-down requirement.</p>
+
+            <h3>Early Signals</h3>
+
+            <p>The early signals from our soft launch have been incredibly strong. In the first week alone:</p>
+
+            <ul>
+              <li>We had 384 unique users try the bot during one of the busiest times of year for the company.</li>
+              <li>We saw an 86% completion rate. This is a powerful metric. It told us that even though some users found the reflection questions a 'heavy lift', the experience was valuable enough for them to finish. The "pull" model was working.</li>
+              <li>64 users used the bot more than once, showing they were curious to reflect on different projects and see if their persona would change.</li>
+            </ul>
+
+            <h2 id="final-reflection">The Work That Matters (And a Final Reflection)</h2>
+
+            <p>This was never just about building a fun quiz. It was about creating an organizational "sensing system".</p>
+
+            <p>We're now sitting on HubSpot's first-ever behavioral map of AI adoption. We can start to see how our orgs are using AI, not just if. This "bottom-up intelligence" is what will power smarter, targeted enablement—moving us beyond generic "AI 101" to interventions that truly accelerate our fluency.</p>
+
+            <p>I'm incredibly fortunate to work for a company that encourages this kind of innovation and provides the psychological safety to build new systems responsibly. I know not every L&amp;D or People team has this same environment or access to a dedicated People Analytics partner.</p>
+
+            <p>But I hope this "behind the build" story helps open minds to what's possible when L&amp;D shifts its perspective—from being a provider of curriculum to being an architect of the systems that generate real, organizational intelligence.</p>
+
+          </article>
+
+          <div style="border-top: 1px solid rgba(44,62,82,.10); padding: 1.5rem 0 3rem;">
+            <a href="writing.html" class="back-link">
+              <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Writing
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="connect-strip">
+    <h3>Let's Connect</h3>
+    <div class="connect-icons">
+      <a class="connect-icon" href="https://www.linkedin.com/in/alydferri/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="connect-icon" href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="color-bar" aria-hidden="true">
+    <span style="background:var(--blue);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+    <span style="background:var(--cream-dk);flex:3"></span>
+    <span style="background:var(--rust);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+  </div>
+
+  <footer role="contentinfo">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Alyshia Perri. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+
+  </body>
+</html>

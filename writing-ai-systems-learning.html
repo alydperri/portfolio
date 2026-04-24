@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Where my thinking stands after a year of designing AI systems for learning, performance, and judgment support.">
+    <meta name="author" content="Alyshia Perri">
+    <title>What I've Learned Designing AI Systems for Learning and Performance — Alyshia Perri</title>
+
+    <link rel="canonical" href="https://alydperri.com/writing-ai-systems-learning.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/all.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+
+    <!-- Custom styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-brand" href="index.html" aria-label="Alyshia Perri – home">
+      <div class="nav-monogram">AP</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Alyshia Perri</span>
+        <span class="nav-brand-sub">Design Portfolio</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="lxd.html">LXD</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="animation.html">Animation</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+      <li><a href="writing.html" class="active" aria-current="page">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-accent-dots" aria-hidden="true">
+      <div class="nav-dot-sq" style="background:var(--blue)"></div>
+      <div class="nav-dot-rect" style="background:var(--gold)"></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="lxd.html">LXD</a>
+    <a href="games.html">Games</a>
+    <a href="animation.html">Animation</a>
+    <a href="graphics.html">Graphics</a>
+    <a href="writing.html">Writing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+          <div class="pt-4 pb-3 border-bottom mb-4">
+            <p class="mb-2">
+              <a href="writing.html" class="back-link">
+                <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Writing
+              </a>
+            </p>
+            <h1 class="lh-sm mb-2">What I've Learned Designing AI Systems for Learning and Performance</h1>
+            <p class="text-muted small mb-2">
+              December 2025 &nbsp;&middot;&nbsp; 10 min read
+              &nbsp;&middot;&nbsp; <span class="tag tag-gold">Conversational AI</span>
+              <span class="tag tag-rust">LXD</span>
+              <span class="tag tag-blue">Design</span>
+            </p>
+            <p class="small">
+              <a href="https://www.linkedin.com/pulse/what-ive-learned-designing-ai-systems-learning-alyshia-perri-xfekc" class="text-muted" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin" aria-hidden="true"></i> Originally published on LinkedIn
+              </a>
+            </p>
+          </div>
+
+          <figure class="mb-4">
+            <img src="assets/writing/ai-systems.png" class="img-fluid rounded" alt="What I've Learned Designing AI Systems for Learning and Performance — article cover image">
+          </figure>
+
+          <article class="article-body pb-5">
+
+            <h2 id="framing">Framing</h2>
+
+            <p>I don't design chatbots. I design judgment-support systems where conversation is the interface.</p>
+
+            <p>Over the past year, I've built and iterated on AI systems embedded in real learning, performance, and evaluation workflows—promotion writing, performance reflection, enablement, and self‑assessment—where outputs don't just save time. They shape judgment, confidence, fairness, and accountability.</p>
+
+            <p>In these contexts, the cost of getting things wrong isn't primarily technical. It's human. What a system infers, hides, or smooths over can influence how people think and decide long after a single interaction ends.</p>
+
+            <p>This piece is a snapshot of what I've learned so far from building, testing, and revising these systems in real use. It's a record of the tradeoffs I now design around, and the practices I return to because they consistently hold up when stakes are real.</p>
+
+            <p>The question I keep coming back to: Will this system make the user clearer and more capable next time—or just faster this time?</p>
+
+            <p>That question guides almost every decision below.</p>
+
+            <h2 id="what-mattered-less">What Mattered Less Than I Expected</h2>
+
+            <p>Early on, I assumed much of the work would live in prompts—finding the right phrasing, tone, or examples to get better outputs.</p>
+
+            <p>Prompts matter. But they turned out to be the least interesting part of the problem.</p>
+
+            <p>Once AI systems touch learning, evaluation, or performance, what matters far more is the system wrapped around the model:</p>
+
+            <ul>
+              <li>what the system is allowed to decide (and what it isn't)</li>
+              <li>how much thinking it leaves with the user</li>
+              <li>how it behaves when inputs are weak, biased, or incomplete</li>
+              <li>how it signals uncertainty, limits, and responsibility</li>
+            </ul>
+
+            <p>Most of the real design work has been about boundaries, workflows, and failure modes—not clever phrasing.</p>
+
+            <h2 id="tensions">Tensions I Now Design Around</h2>
+
+            <p>The following tensions surfaced once people started using these systems for real work—and they now show up explicitly in my designs.</p>
+
+            <h3>Speed vs. Skill-Building</h3>
+
+            <p>AI can dramatically increase speed in writing-heavy workflows. For busy people under pressure, that speed can feel genuinely delightful: paste messy notes, get a clean draft, move on.</p>
+
+            <p>Skill-building can also be delightful, but in a different way. There's satisfaction in clarifying your own thinking, strengthening how you articulate impact, or realizing (over time) that you're getting better at a task.</p>
+
+            <p>The tension isn't that one is good and the other is bad. It's that they reinforce different behaviors.</p>
+
+            <p>I ran into this directly while designing AI-assisted writing flows. Some users wanted the fastest possible path. Others wanted help thinking—surfacing gaps, sharpening claims, and improving how they write over time.</p>
+
+            <p>Rather than treating one approach as correct, I've learned to be explicit about what each path optimizes for:</p>
+
+            <ul>
+              <li><strong>Guided paths</strong> ask users to draft first, then use AI to surface gaps and improve clarity. These reinforce thinking and writing muscle. It can feel like more work—but it's work well spent.</li>
+              <li><strong>Fast paths</strong> allow users to paste rough context and receive synthesis quickly. These prioritize speed and reduced cognitive load. They're easier and often more appealing, but they can lead to skill atrophy.</li>
+            </ul>
+
+            <p>Both can be the right choice depending on the moment. Designing responsibly means making those tradeoffs visible, not accidental.</p>
+
+            <h3>Automation vs. Transparency</h3>
+
+            <p>AI systems are very good at collapsing steps. They can infer intent, fill in gaps, apply rules, and produce outputs that look complete and confident—often without showing how they got there.</p>
+
+            <p>In learning- and performance-adjacent systems, the risk isn't primarily about learning loss. It's about invisible decision-making.</p>
+
+            <p>When a system automates too much without making its assumptions legible, users can't tell:</p>
+
+            <ul>
+              <li>what was inferred vs. explicitly provided</li>
+              <li>where uncertainty exists</li>
+              <li>what criteria were applied</li>
+              <li>where the system stopped and their responsibility began</li>
+            </ul>
+
+            <p>That lack of visibility shifts ownership and this isn't always obvious to the user. Outputs get pasted downstream assuming correctness—not because users were told to trust them, but because the system didn't make its limits clear.</p>
+
+            <p>Because of this, I favor transparency over maximum automation whenever judgment or accountability is involved.</p>
+
+            <p>In practice, this often means:</p>
+
+            <ul>
+              <li>asking follow-up questions instead of inferring missing intent</li>
+              <li>surfacing uncertainty or incomplete evidence instead of hiding it</li>
+              <li>framing outputs as drafts, not conclusions</li>
+              <li>including explicit responsibility reminders when outputs feed real decisions</li>
+            </ul>
+
+            <p>These choices can make systems feel slower or less "magical." But they preserve trust, accountability, and human judgment—especially as stakes rise.</p>
+
+            <h3>Delight Before Seriousness</h3>
+
+            <p>When I say "delight," I don't mean playfulness or novelty. I mean the conditions that make people want to engage.</p>
+
+            <p>In learning-, reflection-, or performance-adjacent systems, engagement isn't guaranteed. People may be anxious, rushed, or unsure what's expected. If a system feels judgmental or overwhelming from the start, rigor won't help—users will disengage or defer their thinking to the tool.</p>
+
+            <p>That's why I think about delight before constraints.</p>
+
+            <p>Delight is how a system earns trust and motivation. Seriousness is how it protects judgment and outcomes. They aren't opposites—they're sequential.</p>
+
+            <p>What changes is how delight shows up. In low-stakes systems, it may look expressive: curiosity, identity, or lightness that lowers fear and self-censorship. As stakes rise, delight becomes quieter. It shows up as speed, clarity, predictability, and emotional safety—not playfulness.</p>
+
+            <p>Once engagement is earned, structure can do its work. Clear workflows and firm boundaries don't feel restrictive when users feel oriented and safe. They make serious thinking possible.</p>
+
+            <h2 id="practices">Practices I Now Default To</h2>
+
+            <p>Alongside these tensions, there are a handful of concrete practices I return to. They're responses to things that broke, confused users, or undermined the goals of the system.</p>
+
+            <h3>Treat Conversation Like a Workflow (Not an Open Chat)</h3>
+
+            <p>Early on, I experimented with more open-ended conversational designs. They felt flexible and friendly—until people started using them for real work.</p>
+
+            <p>What I saw instead:</p>
+
+            <ul>
+              <li>users jumping ahead before the system had enough context</li>
+              <li>feedback being interpreted without the full picture</li>
+              <li>endless loops because it wasn't clear when the task was "done"</li>
+            </ul>
+
+            <p>I now default to designing conversational systems as explicit workflows. That usually means:</p>
+
+            <ul>
+              <li>a clear sequence (input → processing → output → optional refinement)</li>
+              <li>gating feedback until enough information is collected</li>
+              <li>making the end state visible and explicit</li>
+            </ul>
+
+            <p>In one reflection system, I deliberately designed feedback to appear only after all questions were answered. This allowed the system to reason across inputs, catch contradictions, and offer feedback that reflected the whole picture rather than isolated responses.</p>
+
+            <p>Some users asked for feedback after each response. While that may have felt more responsive, it also would have encouraged premature interpretation—both by the system and by the user—before enough context existed.</p>
+
+            <p>Flexibility feels nice. Structure is what makes complex thinking possible.</p>
+
+            <h3>Never Let AI Smooth Over Weak Thinking</h3>
+
+            <p>One of the most tempting things to do with AI is to quietly fix weak inputs.</p>
+
+            <p>In learning- and performance-adjacent systems, this is often the wrong move.</p>
+
+            <p>When AI rewrites vague claims, hedging language, or biased phrasing automatically, the output improves—but the user never sees what was wrong. The system gets credit for improvement, and the learning moment disappears.</p>
+
+            <p>I now design systems to preserve weakness long enough to address it. In practice, that means:</p>
+
+            <ul>
+              <li>keeping problematic language visible</li>
+              <li>surfacing gaps or unsupported claims</li>
+              <li>asking users to reframe or add evidence before regenerating</li>
+            </ul>
+
+            <p>In one manager-writing tool, phrases like "they're not really leadership material" or "I just helped out where I could" were surfaced verbatim rather than quietly rewritten. The system flagged these phrases and prompted the manager to reframe them using observable behaviors, evidence, or concrete outcomes.</p>
+
+            <p>Nothing was auto-corrected. The manager had to notice the problem, confront it, and do the reframing themselves—with guidance, but without the system inventing clarity on their behalf.</p>
+
+            <p>The output improves, but more importantly, the underlying judgment improves too. Automatically smoothing over weak or biased thinking produces cleaner text. Preserving it (briefly and deliberately) is what actually teaches people what "good" looks like.</p>
+
+            <h3>Design Knowing You Won't Have Full Control</h3>
+
+            <p>No matter how careful you are, AI systems will sometimes:</p>
+
+            <ul>
+              <li>overreach</li>
+              <li>hallucinate</li>
+              <li>ignore constraints under pressure</li>
+            </ul>
+
+            <p>I stopped trying to eliminate this entirely (trust me, it's a losing battle) and started designing for recovery instead.</p>
+
+            <p>That often shows up as:</p>
+
+            <ul>
+              <li>visible uncertainty rather than hidden confidence</li>
+              <li>explicit reminders of user responsibility</li>
+              <li>clear ways for users to correct or reject outputs</li>
+            </ul>
+
+            <p>In one coaching system, testing revealed that users were accepting advice they didn't actually find helpful—not because it was good, but because disagreeing felt like friction. The system looked successful on paper, but it was subtly encouraging compliance.</p>
+
+            <p>Adding an explicit "this didn't land—try again" path changed that dynamic. It signaled that disagreement was expected, not exceptional, and made it easier for users to correct the system rather than defer to it.</p>
+
+            <p>Perfect control isn't realistic. Designing systems that support correction, disagreement, and user ownership is.</p>
+
+            <h3>Modularize Early</h3>
+
+            <p>This isn't specific to learning or performance systems. It's true of most AI systems—and frankly, most complex software. But in judgment-adjacent systems, the consequences of getting this wrong compound quickly, so I'm calling it out explicitly.</p>
+
+            <p>As systems grow, large, monolithic prompts become brittle very quickly.</p>
+
+            <p>Early on, modularity felt like an implementation concern. Over time, I realized it was a design control.</p>
+
+            <p>When everything lives in one giant prompt:</p>
+
+            <ul>
+              <li>it's unclear which part of the system is responsible for which behavior</li>
+              <li>failures are hard to diagnose, and even harder to explain</li>
+              <li>small changes can have cascading effects that are difficult to trace</li>
+              <li>judgment boundaries become implicit instead of enforced</li>
+            </ul>
+
+            <p>I now default to separating concerns explicitly. That usually means isolating:</p>
+
+            <ul>
+              <li>UX flow definitions (user-facing text and sequencing)</li>
+              <li>system instructions (role, guardrails, enforcement)</li>
+              <li>evaluation logic (signals, rubrics, thresholds)</li>
+              <li>coaching or response templates (how feedback is phrased)</li>
+            </ul>
+
+            <p>This separation does more than improve maintainability. It makes the system legible (to collaborators and to future me). When something goes wrong, failures are local and traceable rather than opaque.</p>
+
+            <h2 id="questions">Questions I'm Still Thinking About</h2>
+
+            <p>As I keep building and testing these systems, a few questions keep resurfacing:</p>
+
+            <ul>
+              <li>How do we design for skill-building without creating friction that turns people away in time-pressured environments?</li>
+              <li>Where is the right line between helpful synthesis and over-automation as models get more capable?</li>
+              <li>What responsibilities do we have as designers as these systems start shaping norms, not just outputs?</li>
+            </ul>
+
+            <h2 id="designing-with-limits">Designing With Limits (and Evolution)</h2>
+
+            <p>These systems aren't static. They shape behavior over time—sometimes in ways you didn't intend. They also encode values, whether you name them or not.</p>
+
+            <p>I've learned to treat early versions as hypotheses: to watch where users hesitate, defer, or misinterpret, and to revisit tradeoffs once real usage patterns emerge. What feels helpful in a demo can behave very differently once a system is embedded in real work.</p>
+
+            <p>Where I stand now isn't where I expect to stand forever. But this is where I stand today.</p>
+
+            <p>Right now, I believe that designing AI systems close to judgment requires resisting the urge to optimize for speed alone. It means being deliberate about where automation stops, where human thinking must remain visible, and where responsibility clearly rests with the user.</p>
+
+            <p>That's why I keep returning to the same question: Will this system make the user clearer and more capable next time—or just faster this time?</p>
+
+            <p>If this reflection helps you notice different tradeoffs, pressure-test your own instincts, or design with a bit more intention around judgment and accountability, then it's done what I hoped it would do.</p>
+
+            <p>And if your answers differ from mine, I'm genuinely interested in how others are navigating these same tensions.</p>
+
+          </article>
+
+          <div style="border-top: 1px solid rgba(44,62,82,.10); padding: 1.5rem 0 3rem;">
+            <a href="writing.html" class="back-link">
+              <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Writing
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="connect-strip">
+    <h3>Let's Connect</h3>
+    <div class="connect-icons">
+      <a class="connect-icon" href="https://www.linkedin.com/in/alydferri/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="connect-icon" href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="color-bar" aria-hidden="true">
+    <span style="background:var(--blue);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+    <span style="background:var(--cream-dk);flex:3"></span>
+    <span style="background:var(--rust);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+  </div>
+
+  <footer role="contentinfo">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Alyshia Perri. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+
+  <script>
+    (function () {
+      const bar        = document.getElementById('tocBar');
+      const toggleArea = document.getElementById('tocToggleArea');
+      const current    = document.getElementById('tocCurrent');
+      const items      = document.querySelectorAll('.toc-item');
+
+      const sections = Array.from(items).map(a => ({
+        el:    document.getElementById(a.dataset.section),
+        link:  a,
+        label: a.textContent.trim()
+      })).filter(s => s.el);
+
+      function toggleToc() {
+        const isOpen = bar.classList.toggle('open');
+        toggleArea.setAttribute('aria-expanded', isOpen);
+      }
+      toggleArea.addEventListener('click', toggleToc);
+      toggleArea.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleToc(); }
+      });
+
+      items.forEach(a => {
+        a.addEventListener('click', () => {
+          bar.classList.remove('open');
+          toggleArea.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      function spy() {
+        const offset = 140;
+        let active = sections[0];
+        for (const s of sections) {
+          if (s.el.getBoundingClientRect().top <= offset) active = s;
+        }
+        current.textContent = active.label;
+        items.forEach(a => a.classList.toggle('active', a === active.link));
+      }
+
+      window.addEventListener('scroll', spy, { passive: true });
+      spy();
+    })();
+  </script>
+
+  </body>
+</html>

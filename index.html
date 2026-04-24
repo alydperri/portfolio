@@ -1,130 +1,230 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="ALyshia Perri, Bootstrap">
+    <meta name="description" content="Alyshia Perri — designer and developer specializing in learning experiences, games, and AI.">
+    <meta name="author" content="Alyshia Perri">
     <title>Alyshia Perri Design Portfolio</title>
 
     <link rel="canonical" href="https://alydperri.com">
 
-    
-<!--Bootrap CSS-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<!-- Font Awesome -->
-<link href="assets/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
-<!-- Favicons -->
-<link rel="shortcut icon" href="assets/favicons/favicon.ico">
-<link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/all.css" rel="stylesheet">
 
-<!-- Custom styles for this website -->
-<link href="assets/css/main.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
 
+    <!-- Custom styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
   </head>
-  <body class="d-flex flex-column h-100">
-    
-<header>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Alyshia Perri <span class="small fw-lighter ps-1"> Design Portfolio</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html"> <span class="sr-only">Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games.html">Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="lxd.html">LXD</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="animation.html">Animation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="graphics.html">Graphics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="writing.html">Writing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+  <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-brand" href="index.html" aria-label="Alyshia Perri – home">
+      <div class="nav-monogram">AP</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Alyshia Perri</span>
+        <span class="nav-brand-sub">Design Portfolio</span>
       </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="lxd.html">LXD</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="animation.html">Animation</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-accent-dots" aria-hidden="true">
+      <div class="nav-dot-sq" style="background:var(--blue)"></div>
+      <div class="nav-dot-rect" style="background:var(--gold)"></div>
     </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
-</header>
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="lxd.html">LXD</a>
+    <a href="games.html">Games</a>
+    <a href="animation.html">Animation</a>
+    <a href="graphics.html">Graphics</a>
+    <a href="writing.html">Writing</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <div class="row my-5 justify-content-center">
-      <div class="col-md-7">
-        <h1>Hi, I'm Alyshia Perri</h1>
-        <p class="lead">I'm a designer and developer who specializes in games and learning experiences. I also love making graphics, animations, and the occassional website (like this one).
-        </p>
-        
-        <p class="lead">A former Amazon LXD, I'm currently Art Director/Developer at my own indie studio, <a href="https://www.gameswithgeebs.com/" target="_blank">Games with Geebs</a>. I do miss working in a team environment though! If you have a great company culture and could use someone like me on your team, <a href="contact.html">let's chat</a> <i class="fal fa-smile" aria-hidden="true"></i></p>
-      </div>
-      
-      <div class="col-sm-7 col-md-4">
-        <img src="assets/geebs-and-me.jpg" class="img-fluid rounded" alt="Image of Alyshia Perri and her cat, Bagheera">
-      </div>
-    </div>
+  <main id="main-content">
 
-     <!--Not sure I want to add this section? Hmmm...-->
-     <div class="row mb-5 justify-content-center">
-      <div class="col-md-7">
-        <h2>Check out some of my work:</h2>
-        <p>
-          <a class="btn btn-small btn-primary my-2" href="games.html" role="button">Games <i class="fal fa-gamepad" aria-hidden="true"></i></a>
-          <a class="btn btn-small btn-primary my-2" href="lxd.html" role="button">LXD <i class="fal fa-head-side-brain" aria-hidden="true"></i></a>
-          <a class="btn btn-small btn-primary my-2" href="animation.html" role="button">Animation <i class="fal fa-video" aria-hidden="true"></i></a>
-          <a class="btn btn-small btn-primary my-2" href="graphics.html" role="button">Graphics <i class="fal fa-paint-brush-alt" aria-hidden="true"></i></a>
-        </p>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="alert alert-info" role="alert">
-          <p class="card-text small"><strong>Want some testimonials?</strong> Read my <a href="https://www.linkedin.com/in/alydferri/details/recommendations/" target="_blank">LinkedIn recommendations</a>.
+    <!-- HERO -->
+    <section>
+      <div class="hero">
+        <div class="hero-left">
+          <div class="hero-eyebrow">Designer &amp; Developer</div>
+          <h1 class="hero-headline">Hi, I'm<br><em>Alyshia Perri</em></h1>
+          <div class="hero-divider">
+            <div class="hero-divider-line"></div>
+            <div class="hero-divider-dot"></div>
+          </div>
+          <p class="hero-lead">I design and build AI-powered systems and interactive experiences that shape how people learn, decide, and engage.</p>
+          <p class="hero-body">My background spans learning experience design, game development, animation, and front-end development. I care about the full lifecycle: problem framing, prototype, rollout, and the iteration that happens after real people show up and surprise you.</p>
+          <div class="hero-ctas">
+            <a href="#work" class="btn-primary-ap">View My Work</a>
+            <a href="contact.html" class="btn-outline-ap">Let's Chat</a>
+          </div>
+          <div class="hero-meta">
+            <a href="https://www.linkedin.com/in/alydferri/details/recommendations/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn Recommendations
+            </a>
+            <a href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener">
+              <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="cb-cream-dk"></div>
+          <div class="color-block cb-gold"></div>
+          <div class="color-block cb-blue"></div>
+          <div class="color-block cb-rust"></div>
+          <img src="assets/geebs-and-me.jpg" class="hero-photo" alt="Alyshia Perri and her cat, Bagheera">
         </div>
       </div>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section class="section-outer" id="work">
+      <div class="featured-section">
+        <div class="section-header">
+          <h2 class="section-label">Featured Work</h2>
+          <div class="section-rule"></div>
+          <div class="section-dot"></div>
+        </div>
+
+        <div class="work-grid">
+
+          <!-- AIQ Up -->
+          <article class="work-card fade-in">
+            <img src="assets/projects/aiq-up/aiqup-thumb.png" class="work-card-img" alt="AIQ Up — AI fluency sensing engine" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="work-card-img-placeholder" style="display:none">AIQ Up</div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag tag-gold">Conversational AI</span>
+              </div>
+              <div class="work-card-org">HubSpot · 2025</div>
+              <h3 class="work-card-title">AIQ Up: AI Fluency Sensing Engine</h3>
+              <p class="work-card-text">A 10-minute reflection experience that turns one real AI work example into a behavioral persona and tailored coaching — while mapping how AI is actually being adopted across the company. 502 participants, 87% completion, no mandate.</p>
+              <a href="lxd-aiqup.html" class="work-card-link" aria-label="View project: AIQ Up">View Project <i class="fas fa-arrow-right fa-xs" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- Performance Enablement Suite -->
+          <article class="work-card fade-in-2">
+            <img src="assets/projects/qci/qci-thumb.png" class="work-card-img" alt="Performance Enablement Suite" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="work-card-img-placeholder" style="display:none">Performance Suite</div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag tag-gold">Conversational AI</span>
+              </div>
+              <div class="work-card-org">HubSpot · 2025</div>
+              <h3 class="work-card-title">Performance Enablement Suite</h3>
+              <p class="work-card-text">AI-powered assistants embedded in HubSpot's performance workflows to raise the floor on reflection quality — without writing for the user or flattening managerial voice. ~2,600 users, 3rd most-used AI tool at HubSpot.</p>
+              <a href="lxd-qci.html" class="work-card-link" aria-label="View project: Performance Enablement Suite">View Project <i class="fas fa-arrow-right fa-xs" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- AI Adventure Game -->
+          <article class="work-card fade-in-3">
+            <img src="assets/projects/cyoa/cyoa.png" class="work-card-img" alt="AI-Powered Adventure Game" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="work-card-img-placeholder" style="display:none">AI Adventure Game</div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag tag-gold">Conversational AI</span>
+                <span class="tag tag-rust">Games</span>
+              </div>
+              <div class="work-card-org">HubSpot · 2025</div>
+              <h3 class="work-card-title">AI-Powered Adventure Game</h3>
+              <p class="work-card-text">A Day 1 onboarding game where an AI game master presents realistic cultural dilemmas and reflects back what your choices reveal about your instincts. Judgment practice, not memorization. 96% of new hires felt culturally connected.</p>
+              <a href="lxd-cyoa.html" class="work-card-link" aria-label="View project: AI-Powered Adventure Game">View Project <i class="fas fa-arrow-right fa-xs" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE WORK -->
+    <section class="section-outer">
+      <div class="more-section">
+        <div class="section-header">
+          <h2 class="section-label">More of My Work</h2>
+          <div class="section-rule"></div>
+          <div class="section-dot"></div>
+        </div>
+        <div class="more-pills">
+          <a class="pill" href="lxd.html"><i class="fal fa-head-side-brain fa-sm" aria-hidden="true"></i> LXD</a>
+          <a class="pill" href="games.html"><i class="fal fa-gamepad fa-sm" aria-hidden="true"></i> Games</a>
+          <a class="pill" href="animation.html"><i class="fal fa-video fa-sm" aria-hidden="true"></i> Animation</a>
+          <a class="pill" href="graphics.html"><i class="fal fa-paint-brush-alt fa-sm" aria-hidden="true"></i> Graphics</a>
+          <a class="pill" href="writing.html"><i class="fal fa-pen-nib fa-sm" aria-hidden="true"></i> Writing</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="connect-strip">
+    <h3>Let's Connect</h3>
+    <div class="connect-icons">
+      <a class="connect-icon" href="https://www.linkedin.com/in/alydferri/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="connect-icon" href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
-    
-  
   </div>
-</main>
 
-<div class="border text-muted p-4">
-  <p class="text-center my-auto">Let's connect!</p>
-  <p class="text-center my-auto">
-    <a href="https://www.linkedin.com/in/alydferri/" class="link-success" target="_blank">  <i class="fab fa-linkedin fa-2x p-1" aria-hidden="true"></i></a> 
-    <a href="https://www.instagram.com/alydperri/" class="link-success" target="_blank"> <span class="sr-only">Instagram</span> <i class="fab fa-instagram fa-2x p-1" aria-hidden="true"></i></a></a>
-  </p>
-</div>
-
-<footer class="footer mt-auto py-3 bg-light">
-  <div class="container text-center">
-    <span class="text-muted font-weight-lighter small"> <i class="fad fa-copyright" aria-hidden="true"></i><span class="sr-only">Copyright</span> 
-    <script type="text/javascript">
-      document.write(new Date().getFullYear());
-    </script> Alyshia Perri. All Rights Reserved. </span>
+  <div class="color-bar" aria-hidden="true">
+    <span style="background:var(--blue);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+    <span style="background:var(--cream-dk);flex:3"></span>
+    <span style="background:var(--rust);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
   </div>
-</footer>
 
+  <footer role="contentinfo">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Alyshia Perri. All Rights Reserved.</p>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-      
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+
   </body>
 </html>
