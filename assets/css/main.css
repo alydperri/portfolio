@@ -568,7 +568,7 @@ footer p {
 @media (max-width: 900px) {
   .nav-links, .nav-accent-dots { display: none; }
   .nav-toggle { display: block; }
-  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 27px; }
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 14px; }
   .hero-left { padding: 1.5rem 0 1rem; }
   .hero-right { height: 340px; margin-bottom: 2rem; }
   .hero-photo { width: 220px; height: 280px; top: 30px; left: 20px; }
