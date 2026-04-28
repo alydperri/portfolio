@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The ID in Game Design — how instructional design decisions shaped The 2020 Trail's learning experience across a wide range of players.">
+    <meta name="author" content="Alyshia Perri">
+    <title>The ID in Game Design — Alyshia Perri</title>
+
+    <link rel="canonical" href="https://alydperri.com/writing-id-in-game-design.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/all.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+
+    <!-- Custom styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-brand" href="index.html" aria-label="Alyshia Perri – home">
+      <div class="nav-monogram">AP</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Alyshia Perri</span>
+        <span class="nav-brand-sub">Design Portfolio</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="lxd.html">Work</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="animation.html">Animation</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+      <li><a href="writing.html" class="active" aria-current="page">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-accent-dots" aria-hidden="true">
+      <div class="nav-dot-sq" style="background:var(--blue)"></div>
+      <div class="nav-dot-rect" style="background:var(--gold)"></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="lxd.html">Work</a>
+    <a href="games.html">Games</a>
+    <a href="animation.html">Animation</a>
+    <a href="graphics.html">Graphics</a>
+    <a href="writing.html">Writing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+          <div class="pt-4 pb-3 border-bottom mb-4">
+            <p class="mb-2">
+              <a href="writing.html" class="back-link">
+                <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Writing
+              </a>
+            </p>
+            <h1 class="lh-sm mb-2">The ID in Game Design</h1>
+            <p class="text-muted small mb-2">
+              2021 &nbsp;&middot;&nbsp; 6 min read
+              &nbsp;&middot;&nbsp; <span class="tag tag-rust">Games</span>
+              <span class="tag tag-blue">LXD</span>
+            </p>
+          </div>
+
+          <article class="article-body pb-5">
+
+            <p>There's a lot of instructional design involved in game design, though it tends to be more subtle — and that's a good thing! Players don't need to feel like they're being trained on how to play a game. Ideally, they should be immersed in the playing experience, learning through the play itself.</p>
+
+            <p class="text-muted small fst-italic">Side note: This is true for the best ID as well, which is why I think more ID/LXDs should play games! But that's a conversation for another time...</p>
+
+            <p>However, for games made for a very wide audience, full immersion isn't always possible. Some players need more hand-holding than others, and that's okay too. That's where more obvious instructional design can come in.</p>
+
+            <p>Below is an example of some of the ID work I did for a video game called <em><a href="https://store.steampowered.com/app/1533600/The_2020_Trail/" target="_blank" rel="noopener">The 2020 Trail</a></em>.</p>
+
+            <p class="text-muted small fst-italic"><strong>Note:</strong> I made <em>The 2020 Trail</em> video game as one half of a 2-person team (I did the art, writing, animation, and music/sound design). You can view the game trailer below for an overview, but the purpose of this page is to highlight some of the ID interventions I designed for this game. If you'd like to hear more about the full game design process, feel free to reach out!</p>
+
+            <h2>The Challenge</h2>
+
+            <p>As with any game, there are intentional challenges to overcome. These desirable difficulties are part of what make a game fun to play. However, understanding <em>how</em> to play the game shouldn't be one of them. Though this game uses fairly simple mechanics, there are multiple variable relationships that need to be understood in order to play effectively. <strong>The main challenge with <em>The 2020 Trail</em> was designing for the game's wide target audience.</strong> Some players were experienced gamers, while others were first time players with no points of reference on common game design conventions. To ensure a frustration-free playing experience for all, the game needed to cater to both ends of this spectrum.</p>
+
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="https://www.youtube.com/embed/n6GBXvHvHvo?rel=0&modestbranding=1" title="The 2020 Trail Game Trailer" allowfullscreen></iframe>
+            </div>
+            <p class="text-muted small fst-italic mb-4">Made with Unity, Affinity Designer, Spine, Ableton (trailer composed in Camtasia)</p>
+
+            <h2>The Solution</h2>
+
+            <p>Less is <em>usually</em> more. To keep the player immersed in gameplay, we started with no direct instruction. This allowed us to establish a baseline of what players really needed to learn the game. From there, we playtested and iterated as needed until we found the right balance.</p>
+
+            <h3>Phase 1 — Relying on game design conventions</h3>
+
+            <p><em>For experienced players, the combination of a simple dashboard, some iconography, and good sound design was enough to understand the game in the flow of play.</em></p>
+
+            <p>We expected this. Experienced players are used to seeing relative data presented to them as part of a game's user interface. As the game progressed, these players just "got it" because we were using best practices in game design (conventions they've seen before).</p>
+
+            <p>However, experienced gamers were only a subpopulation of our target audience. Through playtesting, we found that some players were struggling to connect the dots.</p>
+
+            <figure class="my-4">
+              <img src="assets/projects/2020-trail/fullscreen.png" class="img-fluid rounded" alt="Screenshot of The 2020 Trail game's main calendar view and dashboard">
+              <figcaption class="text-muted small mt-2 fst-italic">A screenshot of the game's main calendar view. The player can see all relevant metrics and available actions on an ever-present dashboard.</figcaption>
+            </figure>
+
+            <h3>Phase 2 — Subtle design enhancements</h3>
+
+            <p><em>For most players (those with moderate gaming experience), subtle design elements were enough to teach the game's mechanics.</em></p>
+
+            <p>For example, one of the main objectives of the game is to keep your character healthy as you progress through the year. To do this, you need to manage your mood because your mood impacts your health for better or worse. While your mood is good, your health is supported. While your mood is poor, your health is slowly damaged. To help convey this relationship between health and mood, we added demonstrative animations to the relevant portion of the player's dashboard.</p>
+
+            <figure class="my-4">
+              <img src="assets/projects/2020-trail/mood-health.gif" class="img-fluid rounded" alt="Animated GIF of the mood and health portion of The 2020 Trail game's dashboard">
+              <figcaption class="text-muted small mt-2 fst-italic">When the player's mood is good, hearts fly from the mood icon to the health icon to reinforce how a good mood supports health. When the player's mood is poor, tears fall from the mood icon to the health icon to reinforce how a poor mood harms their health.</figcaption>
+            </figure>
+
+            <p>Game information enhanced by iconography, animations, and sound now satisfied the bulk of our players. We could have stopped there. However, playtesting revealed that very novice players were still struggling to understand the game's mechanics. This was causing frustration and zapping fun out of the experience. Even though it was a small subset of the target audience, our goal was to make a game for everyone. Back to the drawing board!</p>
+
+            <h3>Phase 3 — Direct instruction</h3>
+
+            <p><em>For novice players, more direct instruction was <em>almost</em> enough.</em></p>
+
+            <p>To avoid frustrating our novice players with undesirable difficulties, we added more obvious instruction: an informational screen introduced at the start of the game that can be accessed at any time thereafter.</p>
+
+            <p>To start, the info screen explains only the high level objective of the game and includes a tab for game settings. As the game progresses and more game mechanics are introduced, more detail is added here. The info is also contextualized to where the player is in the game (main screen, mini games, etc.). This way, players only get the information that is relevant to the current state of the game. No need to frontload players with all game instructions at once!</p>
+
+            <figure class="my-4">
+              <img src="assets/projects/2020-trail/infotab-state1.png" class="img-fluid rounded" alt="Screenshot of The 2020 Trail game's info screen at the start of gameplay">
+              <figcaption class="text-muted small mt-2 fst-italic">Players are introduced to the game's high-level objective at the start of the game. This also shows them that game settings are available.</figcaption>
+            </figure>
+
+            <figure class="my-4">
+              <img src="assets/projects/2020-trail/infotab-state2.png" class="img-fluid rounded" alt="Screenshot of The 2020 Trail game's info screen after new mechanics have been introduced">
+              <figcaption class="text-muted small mt-2 fst-italic">As the game progresses, more detail is added to the info screen to reflect any new mechanics introduced.</figcaption>
+            </figure>
+
+            <figure class="my-4">
+              <div id="carouselExampleIndicators" class="carousel slide rounded overflow-hidden">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/projects/2020-trail/info-store.png" class="d-block w-100" alt="Screenshot of The 2020 Trail game's store activity info screen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/2020-trail/info-dance.png" class="d-block w-100" alt="Screenshot of The 2020 Trail game's dance activity info screen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/2020-trail/info-skate.png" class="d-block w-100" alt="Screenshot of The 2020 Trail game's skate activity info screen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/2020-trail/info-cook.png" class="d-block w-100" alt="Screenshot of The 2020 Trail game's cooking activity info screen">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="text-muted small mt-2 fst-italic">The info screen is contextualized to where the player is in the game. Sliding through the images above shows how this screen changes. From first to last: shopping activity, dance activity, skate activity, and cooking activity.</figcaption>
+            </figure>
+
+            <p>What more could a player need? Well, turns out, not all players bother viewing the info screen we made available to them. Some were still not grasping key relationships or were missing changes to the gameplay as they arose. This led us to our final instructional intervention.</p>
+
+            <h3>Phase 4 — A little hand-holding</h3>
+
+            <p><em>For novice players, a little hand-holding was the final answer.</em></p>
+
+            <p>Again, your mood impacts your health in the game. This is conveyed in multiple ways in the game's design (UI, animations, sound effects, etc.). For most players, this doesn't need to be spelled out further. In fact, we wouldn't want to interrupt their flow of play to explain it! However, if a player doesn't pick up on these clues, they can become frustrated when their character dies of a poor mood without understanding why. So how do we satisfy both player types?</p>
+
+            <p>To address this, we intervene only once the player lets their mood fall to poor. We gently pause the gameplay to highlight the relationship between mood and health, and explain to the player how they can address their poor mood. The player can then continue playing. It's subtle enough not to annoy the experienced player, but direct enough so the novice player cannot miss it.</p>
+
+            <figure class="my-4">
+              <img src="assets/projects/2020-trail/poor-mood-highlight.png" class="img-fluid rounded" alt="Screenshot of The 2020 Trail game highlighting the player's poor mood and instructing how to address it">
+              <figcaption class="text-muted small mt-2 fst-italic">The first time the player lets their mood fall to poor, the game gently pauses to highlight the relationship between mood and health as well as instruct the player how to address the issue.</figcaption>
+            </figure>
+
+            <h2>The Result</h2>
+
+            <p>After many rounds of playtesting and several design iterations, the game achieved just the right amount of instruction to satisfy our wide variety of players. The result was a frustration-free playing experience for players across the spectrum. This was evidenced by playtesting as well as the reviews the game has received. As of June 2023, <em>The 2020 Trail</em> has maintained a <a href="https://store.steampowered.com/app/1533600/The_2020_Trail/" target="_blank" rel="noopener">91% positive rating on Steam</a>.</p>
+
+          </article>
+
+          <div style="border-top: 1px solid rgba(44,62,82,.10); padding: 1.5rem 0 3rem;">
+            <a href="writing.html" class="back-link">
+              <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Writing
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="connect-strip">
+    <h3>Let's Connect</h3>
+    <div class="connect-icons">
+      <a class="connect-icon" href="https://www.linkedin.com/in/alydferri/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="connect-icon" href="https://www.instagram.com/alydperri/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="color-bar" aria-hidden="true">
+    <span style="background:var(--blue);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+    <span style="background:var(--cream-dk);flex:3"></span>
+    <span style="background:var(--rust);flex:3"></span>
+    <span style="background:var(--gold);flex:1"></span>
+  </div>
+
+  <footer role="contentinfo">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Alyshia Perri. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+
+  </body>
+</html>
