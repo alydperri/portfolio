@@ -260,6 +260,8 @@ main { flex: 1; padding-top: 80px; }
 .tag-gold { background: rgba(200,150,62,.12); color: var(--gold); }
 .tag-rust { background: rgba(194,89,64,.10); color: var(--rust); }
 .tag-blue { background: rgba(91,127,166,.10); color: var(--blue); }
+.tag-purple { background: rgba(130,90,180,.10); color: #7a52b8; }
+.tag-green { background: rgba(60,140,90,.10); color: #3a8a58; }
 
 /* ── DETAIL PAGE HEADER ── */
 .back-link {
@@ -540,7 +542,7 @@ p.text-muted.small.fst-italic { font-size: 0.72rem; }
   background: white; border: 1px solid rgba(44,62,82,.10);
   padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;
 }
-.review-stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.05em; }
+.review-thumb { color: #2e7d32; font-size: 0.85rem; }
 .review-text {
   font-family: 'Playfair Display', serif; font-size: 0.95rem;
   color: var(--slate); line-height: 1.6; font-style: italic; flex: 1;
