@@ -40,7 +40,7 @@
       </div>
     </a>
     <ul class="nav-links">
-      <li><a href="lxd.html" class="active" aria-current="page">LXD</a></li>
+      <li><a href="lxd.html" class="active" aria-current="page">Work</a></li>
       <li><a href="games.html">Games</a></li>
       <li><a href="animation.html">Animation</a></li>
       <li><a href="graphics.html">Graphics</a></li>
@@ -57,7 +57,7 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
-    <a href="lxd.html">LXD</a>
+    <a href="lxd.html">Work</a>
     <a href="games.html">Games</a>
     <a href="animation.html">Animation</a>
     <a href="graphics.html">Graphics</a>
@@ -71,7 +71,7 @@
       <!-- Page header -->
       <div class="page-header">
         <a href="lxd.html" class="back-link">
-          <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to LXD
+          <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Work
         </a>
         <h1>AIQ Up: A Behavioral AI Fluency Sensing Engine</h1>
         <div class="page-meta">
@@ -136,6 +136,7 @@
                 <li><a href="#partnership" class="toc-item" data-section="partnership">Partnership with People Analytics</a></li>
                 <li><a href="#why-different" class="toc-item" data-section="why-different">Why This Approach Was Different</a></li>
                 <li><a href="#result" class="toc-item" data-section="result">The Result</a></li>
+                <li><a href="#ai-in-my-process" class="toc-item" data-section="ai-in-my-process">AI in My Own Process</a></li>
                 <li><a href="#what-this-shows" class="toc-item" data-section="what-this-shows">What This Shows About My Work</a></li>
               </ol>
             </div>
@@ -198,6 +199,11 @@
             </ul>
             <p>That last one matters more than it sounds. It signals that disagreement is expected, not exceptional, and gives users agency.</p>
 
+            <div class="ratio ratio-16x9 mt-4">
+              <iframe src="https://www.youtube.com/embed/s86u9q418rA?rel=0&modestbranding=1" title="AIQ Up promo video" allowfullscreen></iframe>
+            </div>
+            <p class="text-muted small fst-italic mt-2 mb-1">AIQ Up promotional video created to introduce the product to HubSpot employees.</p>
+
             <h2 id="tensions">Key Design Tensions</h2>
 
             <p>The interesting part of this project wasn't just the flow — it was the tradeoffs inside it.</p>
@@ -226,6 +232,10 @@
 
             <p>At the center of AIQ Up is a set of 11 behavioral personas, each representing a distinct way people use AI in their work.</p>
 
+            <a href="assets/projects/aiq-up/persona_prototype_wrangler__runnerup_pattern_scout.png" target="_blank" rel="noopener" style="float:right; width:48%; margin: 0 0 1rem 1.5rem; display:block;">
+              <img src="assets/projects/aiq-up/persona_prototype_wrangler__runnerup_pattern_scout.png" class="img-fluid rounded" alt="Prototype Wrangler / Pattern Scout persona card example" style="width:100%;">
+            </a>
+
             <p>Examples include:</p>
             <ul>
               <li>Draft Whisperer (content creation)</li>
@@ -249,83 +259,7 @@
             </ul>
             <p>Small details, but they made the experience feel more human.</p>
 
-            <p>Four personas are spotlighted below.</p>
-
-            <!-- Persona gallery tabs -->
-            <ul class="nav nav-pills flex-wrap mb-3 persona-tabs" id="personaTabs" role="tablist">
-              <li class="nav-item me-1 mb-1" role="presentation">
-                <button class="nav-link active" id="pw-tab" data-bs-toggle="pill" data-bs-target="#pw" type="button" role="tab" aria-controls="pw" aria-selected="true">🧪 Prototype Wrangler</button>
-              </li>
-              <li class="nav-item me-1 mb-1" role="presentation">
-                <button class="nav-link" id="kt-tab" data-bs-toggle="pill" data-bs-target="#kt" type="button" role="tab" aria-controls="kt" aria-selected="false">📚 Knowledge Tuner</button>
-              </li>
-              <li class="nav-item me-1 mb-1" role="presentation">
-                <button class="nav-link" id="viz-tab" data-bs-toggle="pill" data-bs-target="#viz" type="button" role="tab" aria-controls="viz" aria-selected="false">🎨 Visualizer</button>
-              </li>
-              <li class="nav-item mb-1" role="presentation">
-                <button class="nav-link" id="ps-tab" data-bs-toggle="pill" data-bs-target="#ps" type="button" role="tab" aria-controls="ps" aria-selected="false">🧩 Pattern Scout</button>
-              </li>
-            </ul>
-
-            <div class="tab-content bg-body-tertiary rounded p-3 p-md-4 mb-4" id="personaTabContent">
-
-              <!-- Prototype Wrangler -->
-              <div class="tab-pane fade show active" id="pw" role="tabpanel" aria-labelledby="pw-tab">
-                <div class="row align-items-start g-3">
-                  <div class="col-sm-4">
-                    <img src="assets/projects/aiq-up/prototype_wrangler.png" class="img-fluid rounded shadow-sm" alt="Prototype Wrangler persona card">
-                  </div>
-                  <div class="col-sm-8">
-                    <h5 class="fw-semibold mb-1">Prototype Wrangler</h5>
-                    <p class="text-muted small fst-italic mb-2">The Maker</p>
-                    <p class="small mb-0">You're the maker. You get energy from taking a rough idea and wrangling it into a working prototype. Messy prompts, clunky flows, half-baked knowledge bases — you wrestle with them all until you've got something people can actually use. You learn by building, testing, and iterating. Even when things break, you see it as part of the process. You thrive on seeing ideas come alive, and you don't mind showing rough drafts or "minimum viable bots" to others. For you, AI is most exciting when it stops being theory and becomes a thing.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Knowledge Tuner -->
-              <div class="tab-pane fade" id="kt" role="tabpanel" aria-labelledby="kt-tab">
-                <div class="row align-items-start g-3">
-                  <div class="col-sm-4">
-                    <img src="assets/projects/aiq-up/knowledge_tuner.png" class="img-fluid rounded shadow-sm" alt="Knowledge Tuner persona card">
-                  </div>
-                  <div class="col-sm-8">
-                    <h5 class="fw-semibold mb-1">Knowledge Tuner</h5>
-                    <p class="text-muted small fst-italic mb-2">The Curator</p>
-                    <p class="small mb-0">You're the librarian-engineer. You know that good answers start with good inputs, so you put your energy into curating, organizing, and improving the information AI draws from. Maybe you're tagging documents, designing retrieval prompts, seeding examples, or testing for accuracy — whatever it takes to make AI's outputs more trustworthy. You're less about the flashy demo and more about building a solid foundation that others can rely on. Your power is subtle but vital: when people ask questions, your systems make sure the answers are grounded, relevant, and right. For you, AI is only as good as its knowledge base, and your craft is tuning that base until it sings.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Visualizer -->
-              <div class="tab-pane fade" id="viz" role="tabpanel" aria-labelledby="viz-tab">
-                <div class="row align-items-start g-3">
-                  <div class="col-sm-4">
-                    <img src="assets/projects/aiq-up/visualizer.png" class="img-fluid rounded shadow-sm" alt="Visualizer persona card">
-                  </div>
-                  <div class="col-sm-8">
-                    <h5 class="fw-semibold mb-1">Visualizer</h5>
-                    <p class="text-muted small fst-italic mb-2">The Storycrafter</p>
-                    <p class="small mb-0">You're the storyteller who thinks in visuals, sounds, and experiences. AI is your creative sidekick — helping you generate graphics, mockups, video edits, B-roll, or voiceovers. You might use it to polish slide decks, design eye-catching graphics, or bring footage to life with effects and corrections. You thrive when ideas aren't just words on a page but something people can see and feel. Your superpower is translating concepts into experiences that stick. For you, AI is a creative studio in your pocket — ready to add flair, polish, and impact to every story you tell.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Pattern Scout -->
-              <div class="tab-pane fade" id="ps" role="tabpanel" aria-labelledby="ps-tab">
-                <div class="row align-items-start g-3">
-                  <div class="col-sm-4">
-                    <img src="assets/projects/aiq-up/pattern_scout.png" class="img-fluid rounded shadow-sm" alt="Pattern Scout persona card">
-                  </div>
-                  <div class="col-sm-8">
-                    <h5 class="fw-semibold mb-1">Pattern Scout</h5>
-                    <p class="text-muted small fst-italic mb-2">The Strategist</p>
-                    <p class="small mb-0">You're the puzzle-solver. You notice that some prompts, techniques, or approaches just work better — and you can't resist spotting the patterns behind them. You collect these approaches, tweak them, and reuse them across tasks. You may even start to codify them into templates or "recipes." Your superpower is turning one-off solutions into reusable playbooks. For you, AI is about finding the repeatable moves — and sharing them so others don't have to reinvent the wheel.</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+            <div style="clear:both"></div>
 
             <h2 id="partnership">Partnership with People Analytics</h2>
 
@@ -385,6 +319,26 @@
               <li>where high-value practices could be scaled</li>
             </ul>
 
+            <h2 id="ai-in-my-process">AI in My Own Process</h2>
+
+            <p>Designing an AI system that helps people reflect on their AI usage meant I was doing exactly that — using AI throughout my own process, and paying attention to how.</p>
+
+            <p><strong>Design and logic:</strong> ChatGPT was my primary thinking partner on the persona system. We co-wrote the system instructions and knowledge base iteratively — working through the logic in conversation, testing edge cases, and refining how the system would interpret and respond to different inputs. I made the judgment calls, but it helped me pressure-test ideas and move faster than I could have alone.</p>
+
+            <p><strong>Copy and communication:</strong> Once the project was fully realized, I used ChatGPT to draft the promotional video script. Because it already had full context on the project's purpose and mechanics, it could generate options that were well on target. I reviewed several versions, pulled the best elements, and rewrote from there. The final script is mine — but the drafting process was collaborative.</p>
+
+            <p><strong>Production:</strong> For the chat experience, I used a combo of ChatGPT and Gemini to come up with persona image concepts (which I customized or rebuilt in Affinity Designer, but it still saved me time). For the promo video, I used ElevenLabs to generate an AI version of my own voice recording for the narration (allowing me to control nuance in the delivery while using a much better sounding voice that could be easily tweaked or updated). Finally, I used Google Veo 3 to animate the persona images.</p>
+
+            <div class="row g-3 mt-1 mb-1">
+              <div class="col-6">
+                <img src="assets/projects/aiq-up/AIQUp_visualizer.gif" class="img-fluid rounded" alt="Visualizer persona image animated with Google Veo 3">
+              </div>
+              <div class="col-6">
+                <img src="assets/projects/aiq-up/AIQUp_datasleuth.gif" class="img-fluid rounded" alt="Data Sleuth persona image animated with Google Veo 3">
+              </div>
+            </div>
+            <p class="text-muted small fst-italic mb-4">From left to right, the Visualizer and Data Sleuth persona images animated with Veo 3.</p>
+
             <h2 id="what-this-shows">What This Shows About My Work</h2>
 
             <p>This project is a good example of how I operate:</p>
@@ -402,7 +356,7 @@
           <!-- Footer nav -->
           <div style="border-top: 1px solid rgba(44,62,82,.10); padding: 1.5rem 0 3rem;">
             <a href="lxd.html" class="back-link">
-              <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to LXD
+              <i class="fal fa-arrow-left" aria-hidden="true"></i> Back to Work
             </a>
           </div>
 
