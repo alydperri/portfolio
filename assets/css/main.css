@@ -319,6 +319,8 @@ main { flex: 1; padding-top: 80px; }
   color: var(--slate); margin-top: 1.5rem; margin-bottom: .5rem; letter-spacing: .02em;
 }
 .project-body strong { color: var(--slate); font-weight: 500; }
+figcaption, .figure-caption,
+p.text-muted.small.fst-italic { font-size: 0.72rem; }
 .project-body a:not(.btn-primary-ap):not(.btn-outline-ap), .article-body a:not(.btn-primary-ap):not(.btn-outline-ap),
 .card-text a:not(.btn-primary-ap):not(.btn-outline-ap), .accordion-body a:not(.btn-primary-ap):not(.btn-outline-ap),
 .figure-caption a:not(.btn-primary-ap):not(.btn-outline-ap), .list-group-item a:not(.btn-primary-ap):not(.btn-outline-ap) {
@@ -494,6 +496,64 @@ main { flex: 1; padding-top: 80px; }
 /* bg overrides for album sections */
 .album, .bg-body-tertiary { background-color: var(--cream) !important; }
 .bg-light { background-color: var(--cream-dk) !important; }
+
+/* ── GAMES PAGE ── */
+.games-section-label {
+  font-family: 'Space Mono', monospace; font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted);
+  margin-bottom: 1.25rem; padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(44,62,82,.10);
+}
+.rating-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: rgba(46,125,50,.08); color: #2e7d32;
+  border: 1px solid rgba(46,125,50,.2);
+  padding: 0.3rem 0.75rem; font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em;
+}
+.roles-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;
+}
+.role-card {
+  background: white; border: 1px solid rgba(44,62,82,.10); padding: 1rem 1.125rem;
+}
+.role-card-title {
+  font-family: 'Space Mono', monospace; font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.375rem;
+}
+.role-card-desc {
+  font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.55;
+}
+.games-aside {
+  background: white; border-left: 3px solid rgba(44,62,82,.15);
+  padding: 1rem 1.25rem; font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem; color: var(--muted); line-height: 1.65;
+}
+.games-meta { border-collapse: collapse; width: 100%; }
+.games-meta td { padding: 0.375rem 0; vertical-align: top; font-family: 'DM Sans', sans-serif; }
+.games-meta td:first-child {
+  color: var(--muted); font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.08em; width: 130px; padding-right: 1rem;
+}
+.games-meta td:last-child { color: var(--text); font-size: 0.875rem; }
+.review-card {
+  background: white; border: 1px solid rgba(44,62,82,.10);
+  padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;
+}
+.review-stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.05em; }
+.review-text {
+  font-family: 'Playfair Display', serif; font-size: 0.95rem;
+  color: var(--slate); line-height: 1.6; font-style: italic; flex: 1;
+}
+.review-attribution {
+  font-family: 'DM Sans', sans-serif; font-size: 0.72rem;
+  color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;
+}
+.review-placeholder {
+  background: var(--cream); border: 1px dashed rgba(44,62,80,.2);
+  padding: 1.25rem; font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem; color: var(--muted); font-style: italic; line-height: 1.5;
+}
 
 /* ── WRITING INDEX CARDS ── */
 .writing-card {
