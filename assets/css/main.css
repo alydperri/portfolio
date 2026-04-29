@@ -319,18 +319,18 @@ main { flex: 1; padding-top: 80px; }
   color: var(--slate); margin-top: 1.5rem; margin-bottom: .5rem; letter-spacing: .02em;
 }
 .project-body strong { color: var(--slate); font-weight: 500; }
-.project-body a, .article-body a,
-.card-text a, .accordion-body a,
-.figure-caption a, .list-group-item a {
+.project-body a:not(.btn-primary-ap):not(.btn-outline-ap), .article-body a:not(.btn-primary-ap):not(.btn-outline-ap),
+.card-text a:not(.btn-primary-ap):not(.btn-outline-ap), .accordion-body a:not(.btn-primary-ap):not(.btn-outline-ap),
+.figure-caption a:not(.btn-primary-ap):not(.btn-outline-ap), .list-group-item a:not(.btn-primary-ap):not(.btn-outline-ap) {
   color: var(--slate);
   text-decoration: underline;
   text-decoration-color: rgba(44, 62, 82, 0.3);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s;
 }
-.project-body a:hover, .article-body a:hover,
-.card-text a:hover, .accordion-body a:hover,
-.figure-caption a:hover, .list-group-item a:hover {
+.project-body a:not(.btn-primary-ap):not(.btn-outline-ap):hover, .article-body a:not(.btn-primary-ap):not(.btn-outline-ap):hover,
+.card-text a:not(.btn-primary-ap):not(.btn-outline-ap):hover, .accordion-body a:not(.btn-primary-ap):not(.btn-outline-ap):hover,
+.figure-caption a:not(.btn-primary-ap):not(.btn-outline-ap):hover, .list-group-item a:not(.btn-primary-ap):not(.btn-outline-ap):hover {
   color: var(--slate);
   text-decoration-color: var(--gold);
 }
